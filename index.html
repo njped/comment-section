@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="app.js"></script>
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+
+        input, textarea {
+            margin: 10px;
+            width: min-content;
+        }
+
+        button {
+            margin: 0 10px;
+            width: fit-content;
+        }
+
+        .showMessage {
+            margin: 20px 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" name="username" id="username" placeholder="username">
+        <textarea name="comment" id="comments" cols="30" rows="10" onfocus="this.value=''" placeholder="Comment Section">
+
+        </textarea>
+        <button>Submit Comment</button>
+        <section class="showMessage">
+            <div id="showUsername"></div>
+            <div id="showComment"></div>
+        </section>
+    </div>
+</body>
+</html>
